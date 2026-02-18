@@ -1,98 +1,54 @@
-Sistema Acadêmico com Interface Gráfica (Tkinter)
+#  Sistema Acadêmico com Interface Gráfica
 
-Aplicação educacional desenvolvida em Python com interface gráfica utilizando Tkinter e banco de dados SQLite, permitindo o gerenciamento de trabalhos acadêmicos por professores e estudantes.
+Aplicação desenvolvida em Python com interface gráfica em Tkinter e banco de dados SQLite para gerenciamento de trabalhos acadêmicos por professores e estudantes.
 
-O projeto foi criado com fins de aprendizado prático, simulando funcionalidades reais de um sistema educacional com controle de acesso por tipo de usuário.
+##  Objetivo
+Simular o funcionamento de um sistema educacional real, aplicando conceitos de desenvolvimento de software como controle de usuários, persistência de dados e operações de CRUD.
 
- Objetivo do Projeto
+##  Tecnologias Utilizadas
+- Python
+- Tkinter (Interface gráfica)
+- SQLite (Banco de dados local)
+- Programação Orientada a Objetos
 
-Aplicar conceitos de desenvolvimento de software na construção de um sistema completo, incluindo:
+##  Funcionalidades
 
-Interface gráfica desktop
+###  Professores
+- Visualizar todos os trabalhos cadastrados
+- Editar ou deletar qualquer trabalho
+- Gerar relatório completo
+- Deletar todos os registros (com reinício de ID)
 
-Persistência de dados
+###  Estudantes
+- Acessar apenas os trabalhos vinculados ao seu ID
+- Adicionar novos trabalhos
+- Editar seus próprios registros
+- Remover seus próprios trabalhos
+- Campos protegidos contra alteração de ID
 
-Controle de usuários
+##  Sistema de Login
+O usuário escolhe o tipo de acesso ao iniciar o sistema.
 
-Operações de CRUD
-
-Regras de negócio distintas por perfil de acesso
-
- Tecnologias Utilizadas
-
-Python
-
-Tkinter → Interface gráfica
-
-SQLite → Banco de dados local
-
-Programação Orientada a Objetos
-
-CRUD (Create, Read, Update, Delete)
-
- Perfis de Usuário
-
-O sistema possui dois níveis de acesso com permissões diferentes:
-
- Professores
-
-Visualizar todos os trabalhos cadastrados
-
-Editar ou deletar qualquer trabalho
-
-Gerar relatório completo
-
-Deletar todos os registros (com reinício automático dos IDs)
-
- Estudantes
-
-Visualizar apenas os trabalhos associados ao seu ID
-
-Adicionar novos trabalhos
-
-Editar seus próprios registros
-
-Remover seus próprios trabalhos
-
-Campos de ID protegidos contra alteração
-
-Tela de Login
-
-O sistema inicia com uma tela de autenticação onde o usuário escolhe o tipo de acesso:
-
-Professores
+**Professores**
 Usuário: admin
 Senha: admin
 
-Estudantes
+**Estudantes**
 Usuários: 01 a 05
 Senha: igual ao número do usuário
 Exemplo: 01 → senha 01
 
-Conceitos Aplicados
+##  Conceitos Aplicados
+- CRUD completo com persistência em banco
+- Integração entre interface gráfica e banco de dados
+- Controle de permissões por tipo de usuário
+- Organização lógica de aplicação desktop
+- Estruturação de software com POO
 
-Este projeto permitiu exercitar:
+##  Possíveis Melhorias
+- Criptografia de senhas
+- Cadastro dinâmico de usuários
+- Exportação de relatórios em PDF
+- Interface aprimorada
+- Versão web futura
 
-Desenvolvimento de aplicações desktop
-
-Integração entre interface gráfica e banco de dados
-
-Controle de permissões por usuário
-
-Estruturação de código orientado a objetos
-
-Manipulação e persistência de dados com SQLite
-
-Simulação de sistema real de gerenciamento acadêmico
-
- Possíveis Melhorias Futuras
-
-Criptografia de senhas
-
-Cadastro dinâmico de usuários
-
-Exportação de relatórios em PDF
-
-Interface mais moderna (CustomTkinter ou PyQt)
-
-Transformação em aplicação web (Flask/Django)
